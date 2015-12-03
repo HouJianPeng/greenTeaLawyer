@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9060" systemVersion="15C27e" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9051"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="DetailInfoViewController">
+            <connections>
+                <outlet property="detaiTitle" destination="lo5-nv-OgP" id="iJf-mO-sIP"/>
+                <outlet property="detailWebView" destination="oGO-pw-lLV" id="WAX-Nw-EQ6"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lo5-nv-OgP" userLabel="Detai Title">
+                    <rect key="frame" x="-42" y="-21" width="42" height="21"/>
+                    <animations/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="37" id="dgh-m1-G2m">
+                            <variation key="heightClass=regular-widthClass=compact" constant="47"/>
+                        </constraint>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" weight="black" pointSize="19"/>
+                    <nil key="highlightedColor"/>
+                    <variation key="default">
+                        <mask key="constraints">
+                            <exclude reference="dgh-m1-G2m"/>
+                        </mask>
+                    </variation>
+                    <variation key="heightClass=regular-widthClass=compact">
+                        <mask key="constraints">
+                            <include reference="dgh-m1-G2m"/>
+                        </mask>
+                    </variation>
+                </label>
+                <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="oGO-pw-lLV" userLabel="Detail Web View">
+                    <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                    <animations/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                </webView>
+            </subviews>
+            <animations/>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="lo5-nv-OgP" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="8" id="8CZ-X0-ARM"/>
+                <constraint firstAttribute="bottom" secondItem="oGO-pw-lLV" secondAttribute="bottom" constant="35" id="8mU-aU-gbq">
+                    <variation key="heightClass=regular-widthClass=compact" constant="48"/>
+                </constraint>
+                <constraint firstItem="oGO-pw-lLV" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="cPQ-8Y-OuJ"/>
+                <constraint firstAttribute="trailing" secondItem="lo5-nv-OgP" secondAttribute="trailing" constant="8" id="pNx-Xk-bKs"/>
+                <constraint firstItem="oGO-pw-lLV" firstAttribute="top" secondItem="lo5-nv-OgP" secondAttribute="bottom" constant="1" id="qVW-37-eID">
+                    <variation key="heightClass=regular-widthClass=compact" constant="1"/>
+                </constraint>
+                <constraint firstAttribute="trailing" secondItem="oGO-pw-lLV" secondAttribute="trailing" id="tT4-6T-RWB"/>
+                <constraint firstItem="lo5-nv-OgP" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="yoq-QA-ygP"/>
+            </constraints>
+            <variation key="default">
+                <mask key="subviews">
+                    <exclude reference="lo5-nv-OgP"/>
+                    <exclude reference="oGO-pw-lLV"/>
+                </mask>
+                <mask key="constraints">
+                    <exclude reference="8CZ-X0-ARM"/>
+                    <exclude reference="pNx-Xk-bKs"/>
+                    <exclude reference="yoq-QA-ygP"/>
+                    <exclude reference="8mU-aU-gbq"/>
+                    <exclude reference="cPQ-8Y-OuJ"/>
+                    <exclude reference="qVW-37-eID"/>
+                    <exclude reference="tT4-6T-RWB"/>
+                </mask>
+            </variation>
+            <variation key="heightClass=regular-widthClass=compact">
+                <mask key="subviews">
+                    <include reference="lo5-nv-OgP"/>
+                    <include reference="oGO-pw-lLV"/>
+                </mask>
+                <mask key="constraints">
+                    <include reference="8CZ-X0-ARM"/>
+                    <include reference="pNx-Xk-bKs"/>
+                    <include reference="yoq-QA-ygP"/>
+                    <include reference="8mU-aU-gbq"/>
+                    <include reference="cPQ-8Y-OuJ"/>
+                    <include reference="qVW-37-eID"/>
+                    <include reference="tT4-6T-RWB"/>
+                </mask>
+            </variation>
+            <point key="canvasLocation" x="115" y="294"/>
+        </view>
+    </objects>
+</document>
